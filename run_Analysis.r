@@ -64,5 +64,5 @@ library("plyr")
 # write the tidy data to the working directory as "tidy_data.txt"
 Data2<-aggregate(. ~subject + activity, Data, mean)
 Data2<-Data2[order(Data2$subject,Data2$activity),]
-write.csv(Data2, file = "tidydata.csv", row.names=FALSE)
+write.table(Data2, file = "tidydata.txt", row.names=FALSE)
 

@@ -7,17 +7,27 @@ This script will check if the data file is present in your working directory. (I
 #Read data
 
 subject_test : subject IDs for test
+
 subject_train : subject IDs for train
+
 X_test : values of variables in test
+
 X_train : values of variables in train
+
 y_test : activity ID in test
+
 y_train : activity ID in train
+
 activity_labels : Description of activity IDs in y_test and y_train
+
 features : description(label) of each variables in X_test and X_train
 
 dataFeatures : bind of X_train and X_test
+
 dataSubject : bind of subject_train and subject_test
+
 dataActivity : bind of y_train and y_test
+
 CombinedDataSet bind of dataFeatures,dataSubject,dataActivity
 
 #Extract only mean() and std()
@@ -33,10 +43,11 @@ activity : bind of y_train and y_test
 
 #Rename ID to activity name
 
-Group the activity column of dataSet as "act_group", then rename each levels with 2nd column of activity_levels. Finally apply the renamed "act_group" to Data's activity column.
+Group the activity column of dataSet as "act_group", then rename each levels with 2nd column of activity_levels then apply the renamed "act_group" to Data's activity column.
+
 act_group : factored activity column of Data
 
-#Output tidy data as tidydata.csv
+#Output tidy data as tidydata.txt
 
 Data is aggregated to create tidy data. It will also add [mean of] to each column labels for better description. Finally output the data as "tidydata.csv"
 

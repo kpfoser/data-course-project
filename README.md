@@ -1,4 +1,5 @@
-# data-course-project - run_Analysis.R
+run_Analysis.R
+
 The purpose of this project is to demonstrate your ability to collect, work with, and clean a data set.
 
 Review criteria
